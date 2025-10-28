@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ENHYPEN Achievements and Milestones">
+  <meta name="author" content="C Dela Rosa">
+  <title>A Guide to Enhypen</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../assets/enha.jpg" type="image/jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+</head>
+
+<style>
+
+    /* === FONT IMPORT === */
+@font-face {
+  font-family: 'EarthOrbit';
+  src: url('/assets/EarthOrbiterXtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #000000, #111111, #1a1a1a);
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.hero {
+            width: 100%;
+            height: 400px;
+            background-image: url("../assets/enhypenDu.png"); 
+            background-size: cover;
+            background-position: center;
+            filter: brightness(90%);
+        }
+
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === PAGE TITLE === */
+.page-title {
+  font-family: 'EarthOrbiter', sans-serif;
+  font-size: 2.5rem;
+  color: #ffb3c6;
+  margin-top: 120px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* === INTRO TEXT === */
+.intro {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 10px auto 50px auto;
+  color: #ddd;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* === MEDIA SECTION === */
+.media-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 40px 0 70px 0;
+}
+
+.media-section img {
+  width: 420px;
+  border-radius: 15px;
+  border: 1px solid #333;
+}
+
+iframe {
+  width: 420px;
+  height: 236px;
+  border-radius: 15px;
+  border: 1px solid #333;
+}
+
+/* === ENCHELLA Section with Floating Image === */
+.enchella-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  overflow: auto; /* clears float */
+}
+
+.enchella-img {
+  float: left;
+  width: 300px;
+  max-width: 100%;
+  margin-right: 25px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  border: 1px solid #333;
+}
+
+.enchella-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* === Centered Responsive Video === */
+.enchella-video {
+  clear: both;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.enchella-video iframe {
+  width: 100%;
+  max-width: 720px;
+  height: 405px; /* 16:9 ratio */
+  border-radius: 15px;
+  border: 1px solid #333;
+}
+
+.enchella-line {
+  margin-top: 20px;
+  margin-left: 325px; /* matches floated image width + spacing */
+  border-top: 1px solid #444;
+  width: calc(100% - 325px - 20px); /* subtract image width and margin */
+  height: 1px;
+}
+
+/* === TABLE === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 50px auto;
+  max-width: 900px;
+  border: 1px solid #333;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #111;
+  color: #ffb3c6;
+  font-weight: bold;
+  font-family: 'EarthOrbiter', sans-serif;
+}
+
+td {
+  background-color: #1a1a1a;
+  color: #eee;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-title {
+  text-align: center;
+  font-family: 'EarthOrbiter', sans-serif;
+  font-size: 2rem; /* adjust size as needed */
+  color: #ffb3c6;
+  margin: 50px 0 20px 0;
+}
+
+/* === MEMBERS SECTION === */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 35px;
+  justify-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.member-card {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  border-color: #ffb3c6;
+  box-shadow: 0 0 15px rgba(255, 179, 198, 0.25);
+}
+
+.member-card h3 {
+  font-family: 'EarthOrbiter', sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #ffb3c6;
+}
+
+.member-card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.closing-statement {
+  text-align: center;
+  font-size: 1.15rem;
+  color: #ffb3c6;
+  margin: 40px auto 30px auto;
+  font-family: 'Poppins', sans-serif;
+  max-width: 700px;
+  font-style: italic;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #0a0a0a;
+  padding: 30px 15px;
+  border-top: 2px solid #ffb3c6;
+  color: #bbb;
+  font-size: 0.9rem;
+  text-align: center;
+  font-family: 'Poppisn', sans-serif;
+  margin-top: 80px;
+}
+
+footer a {
+  color: #ffb3c6;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+</style>
+<body>
+   <header>
+  <div class="top-boxes">
+        
+        <div class="box">
+            <a href="https://cgdelarosa.github.io/2QRepositoryMgDELAROSA/">Home</a>  
+        </div>
+
+        <div class="box">
+         <a href="2Q1MgVargas.html">Main </a>  
+        </div>
+
+        <div class="box">
+        <a href="2Q1GMagnesiumCruz.html">i-Land Life</a>  
+        </div>
+
+        <div class="box">
+        <a href="2Q1MgSy.html">Lore to Songs/Albums</a>  
+        </div>
+
+        <div class="box">
+        <a href="2Q1MgDelaRosa.html">Achievements</a>  
+        </div>
+  </div>
+
+<img src="../assets/enha.jpeg" alt="Enhypen Logo" class="header-image">
+
+</header>
+
+  <div class="hero"></div>
+
+  <main>
+    <section id="achievements" class="section">
+      <h1 class="page-title">ENHYPEN ACHIEVEMENTS & MILESTONES</h1>
+      <p class="intro">
+        ENHYPEN has risen from promising rookies to global icons. Their music, artistry, and teamwork
+        have earned them recognition from fans and institutions worldwide. From record-breaking album
+        sales and chart-topping releases to historic award wins and sold-out world tours, the group
+        continues to redefine what it means to be a next-generation K-pop powerhouse.
+      </p>
+
+   <div class="enchella-section">
+  <img src="../assets/enchella.webp" alt="ENHYPEN at Coachella" class="enchella-img">
+
+  <p class="enchella-text">
+    In 2024, ENHYPEN made history as the <strong>youngest K-pop group to perform at Coachella</strong>, showcasing their incredible growth and artistry. Their dynamic stage presence captivated both festival-goers and millions watching online. This milestone signified their rising influence in the global music scene.
+  </p>
+
+  <br>
+  <div class="enchella-line"></div>
+
+  <div class="enchella-video">
+    <iframe src="https://www.youtube.com/embed/pDzNM7fYNZc?si=-q_uQ_oVw_pO3Rfy"
+      title="ENHYPEN Coachella Performance" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+
+
+
+    <table>
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Award / Record</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>2020</td><td>Rookie of the Year</td><td>MAMA, MMA, Golden Disc, and more</td></tr>
+        <tr><td>2021</td><td>Billboard 200 Debut</td><td>#11 for "DIMENSION: DILEMMA"</td></tr>
+        <tr><td>2021</td><td>TIME Next Generation Leaders</td><td>Recognized by TIME Magazine</td></tr>
+        <tr><td>2022</td><td>Million-Seller Album</td><td>"MANIFESTO: DAY 1" sold 1.2M+ in 1st week</td></tr>
+        <tr><td>2023</td><td>Prada Global Ambassadors</td><td>First 4th-gen group with this title</td></tr>
+        <tr><td>2024</td><td>Coachella Performance</td><td>Youngest K-pop group to perform</td></tr>
+        <tr><td>2025</td><td>10 Million Career Sales</td><td>Surpassed 10M total physical albums</td></tr>
+      </tbody>
+    </table>
+
+    <h2 class="section-title">Members & Individual Achievements</h2>
+    <div class="members-grid">
+      <div class="member-card"><h3>JUNGWON</h3><p>Invited to join Recording Academy 2025; praised for leadership and charisma.</p></div>
+      <div class="member-card"><h3>HEESEUNG</h3><p>Main vocal; recognized for live stage excellence and composition skills.</p></div>
+      <div class="member-card"><h3>JAY</h3><p>Global fashion figure; featured in major brand editorials and campaigns.</p></div>
+      <div class="member-card"><h3>JAKE</h3><p>Brand ambassador for Tiffany & Co.; songwriting and lyric contributions.</p></div>
+      <div class="member-card"><h3>SUNGHOON</h3><p>Model for Hince; admired for visuals and elegant performance style.</p></div>
+      <div class="member-card"><h3>SUNOO</h3><p>Global ambassador for “8 Seconds”; known for charm and engagement.</p></div>
+      <div class="member-card"><h3>NI-KI</h3><p>Main dancer; viral choreography and “Artist of the Month” recognition.</p></div>
+    </div>
+
+    <p class="closing-statement">
+  Their consistency, innovation, and connection with ENGENEs across continents have solidified their place among the most influential global artists of their era.
+  </p>
+    
+  </main>
+
+  <footer>
+    <p>© 2025 C Dela Rosa |
+      <a href="https://beliftlab.com/" target="_blank">BELIFT LAB</a> |
+      <a href="https://weverse.io/enhypen" target="_blank">Weverse</a> |
+      <a href="https://docs.google.com/document/d/10p4iZY4Y6k3yycmB2S2sDk7rkz6dChRF9Z2oaxUZb58/edit?usp=sharing" target="_blank">References</a>
+    </p>
+  </footer>
+</body>
+</html>
