@@ -61,7 +61,7 @@ header {
 }
 
 .box:hover { 
-  background-color: rgba(244, 203, 136, 0.682); 
+  background-color: rgba(215, 213, 208, 0.682); 
   transform: scale(1.05); 
 }
 
